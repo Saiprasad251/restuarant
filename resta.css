@@ -1,0 +1,370 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height:auto;
+}
+.navbar
+{
+    width: 100%;
+    height:100px;
+    /* background-color: antiquewhite; */
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 10px 20px; */
+    box-shadow: 2px 2px 2px black;
+    z-index: 4;
+    position: sticky;
+    top: 0px;
+    background-color: blanchedalmond;
+}
+.list ul
+{
+    display: flex;
+    color:red;
+}
+.list ul li
+{
+    margin: 0px 20px;
+    padding: 5px 5px;
+    list-style-type:none;
+}
+.navbar .logo
+{
+    color: aqua;
+}
+.list ul li:hover
+{
+    background-color: rgb(213, 230, 231);
+    border-radius: 10px;
+     
+}
+.tel a
+{
+    text-decoration: none;
+    color: green;
+}
+@media (max-width:680px) {
+    .navbar
+    {
+        height: auto;
+    }
+    .navbar .list
+    {
+        margin-top: 100px;
+    }
+    .navbar .logo
+    {
+        position: absolute;
+        left: 9%;
+    }
+    .navbar .tel
+    {
+        position:absolute;
+        right: 5%;
+    }
+    .navbar ul li
+    {
+        margin: 0px 10px;
+    }
+    .content
+    {
+        height: 150px;
+    }
+    .content p,h2
+    {
+        font-size:20px;
+    }
+}
+.content
+{
+    text-align: center;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 300px;
+     background-image: url(./restarunt.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.content p,h2,input
+{
+    padding:10px;
+    position: relative;
+    top: 10%;
+    
+}
+.content p,h2
+{
+    font-size: 40px;
+      background-clip: text;
+     color: transparent;
+     /* background-image: linear-gradient(white,red,yellow); */
+     background-color: olivedrab;
+}
+.content input
+{
+    
+    padding:10px 20px;
+    border-radius: 10px;
+    color:white;
+    border: 1px solid gray;
+    background-color: crimson;
+    font-size: 20px;
+}
+.content input:hover
+{
+    color: black;
+    background-color: aliceblue;
+}
+
+/* menu  card section */
+.menu .menuhead
+{
+  margin-top: 20px;
+    color:red;
+    text-align: center;
+}
+.cards
+{
+    /* width: 100%; */
+    height: auto;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+}
+.cards .card
+{
+    width: 200px;
+    height: 365px;
+    /* border: 1px solid red; */
+    background-color: white;
+    box-shadow: 0px 0px 3px 4px gray;
+    margin: 15px;
+    padding: 15px;
+
+     
+
+}
+.cards .card img
+{
+    width: 190px;
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 200px;
+}
+.cards .card img:hover
+{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+
+
+.cards .card h3
+{
+    text-align: center;
+    /* margin-top: 15px; */
+    font-size: 20px;
+    color: orange;
+
+}
+.cards .card p
+{
+    text-align: center;
+}
+.cards .card .mrp
+{
+    font-size: 20px;
+   
+}
+.cards .card button
+{
+    text-align: center;
+    margin-left: 45px;
+   width: 80px;
+   height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+@media (max-width:680px) {
+    .cards 
+    {
+        height: auto;
+    }
+}
+
+/* CHEF SECTION */
+.chef .chefhead
+{
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+.chefcards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+.chefcards .card img
+{
+    width: 150px;
+    height: 200px;
+}
+ 
+/* about section */
+.about
+{
+    background-image:linear-gradient(45deg,gray,hwb(0 81% 9% / 0.904)) ;
+    margin-top: 30px;
+}
+.about .abouthead
+{
+    font-family: cursive;
+    color: red;
+     text-align: center;
+} 
+.aboutcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+}
+
+.cardsection {
+    width: 45%;
+    /* min-width: 300px; */
+    /* border: 1px solid yellow; */
+   
+}
+
+.cardsection img {
+    width: 100%;
+    height: auto;
+}
+
+.cardsection p {
+    text-align: justify;
+    letter-spacing: 1.5px;
+    height:auto;
+    /* width: 300px; */
+    margin-left: 100px;
+   line-height: 30px;
+
+}
+
+.cardsection h3
+{
+    text-align: center;
+    color:blue;
+}
+/* Responsive Fix */
+@media (max-width: 680px) {
+    .aboutcards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardsection {
+        width: 90%;
+    }
+    .cardsection p
+    {
+        margin-left: 0px;
+    }
+}
+/* contact section */
+.contact
+{
+    background-image:linear-gradient(45deg,hotpink,blue) ;
+}
+.contactlogo{
+ color: red;
+ text-align: center;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30%;
+    flex-wrap: wrap;
+}
+@media (max-width:320px) {
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+}
+.contactchild input
+{
+margin-top: 10px;
+border-radius: 10px;
+border-color: blue;
+}
+.contactchild textarea
+{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color:darkgray;
+}
+.contactchild ::placeholder
+{
+    color: cadetblue;
+    font-size: 15px;
+}
+.contactchild button
+{
+    color: aliceblue;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.contactchild p
+{
+    margin-top: 20px;
+    color: aliceblue;
+}
+.contactchild h3
+{
+    color: wheat;
+}
+
+/* footer section */
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg,black,gray);
+}
+footer .childf ul li
+{
+    list-style-type: none;
+    padding: 10px;
+}
+footer .childf ul li a
+{
+    text-decoration: none;
+}
+footer .childf p
+{
+    margin: 10px;
+    color: azure;
+}
